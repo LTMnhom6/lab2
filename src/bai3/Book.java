@@ -7,10 +7,6 @@ package bai3;
 
 import java.util.Scanner;
 
-/**
- *
- * @author TRINH QUANG TOAN
- */
 public class Book {
 
     private String bookName;

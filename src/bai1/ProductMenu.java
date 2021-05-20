@@ -9,17 +9,15 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Scanner;
-
 /**
  *
- * @author TRINH QUANG TOAN
  */
 public class ProductMenu {
    public static void main(String[] args) {
-    ArrayList<Product> product = new ArrayList<>();// k t ds 
+    ArrayList<Product> product = new ArrayList<>();
     int option;
     Scanner sc = new Scanner(System.in);
-    do{// đưa vậy thì ko đúng đưa như a vừa làm mà nó ko dc 
+    do{
         showMenu();
         System.out.println("Nhập lựa chọn của bạn :");
         option =Integer.parseInt(sc.nextLine());

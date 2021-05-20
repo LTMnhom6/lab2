@@ -7,10 +7,6 @@ package bai2;
 
 import java.util.Scanner;
 
-/**
- *
- * @author TRINH QUANG TOAN
- */
 public class Product {
 
     private String maHH;

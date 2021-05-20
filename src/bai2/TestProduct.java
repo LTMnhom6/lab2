@@ -8,10 +8,6 @@ package bai2;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/**
- *
- * @author TRINH QUANG TOAN
- */
 public class TestProduct {
     static void menu() {
         System.out.println("1. Nhập thông tin cho n sản phẩm");

@@ -7,10 +7,6 @@ package bai3;
 
 import java.util.Scanner;
 
-/**
- *
- * @author TRINH QUANG TOAN
- */
 public class UnetiBook extends Book {
     private String language;
     private int semester;
@@ -43,17 +39,17 @@ public class UnetiBook extends Book {
     @Override
     public void display() {
         super.display(); //To change body of generated methods, choose Tools | Templates.
-        System.out.println("Ngon ngu:" + language);
-        System.out.println("Hoc ky:" + semester);
+        System.out.println(" Ngon ngu:" + language);
+        System.out.println(" Hoc ky:" + semester);
     }
 
     @Override
     public void input() {
         super.input(); //To change body of generated methods, choose Tools | Templates.
         Scanner sc = new Scanner(System.in);
-        System.out.println("Nhap ngon ngu: ");
+        System.out.println(" Nhap ngon ngu: ");
         language = sc.nextLine();
-        System.out.println("nhap hoc ky:");
+        System.out.println(" Nhap hoc ky:");
         semester = Integer.parseInt(sc.nextLine());
     }
 
@@ -80,6 +76,7 @@ public class UnetiBook extends Book {
                 b[i].display();
                 dem++;
             }
+                    
         }
         if (dem == 0) {
             System.out.println("khong co sach ban muon tim");
@@ -104,12 +101,12 @@ public class UnetiBook extends Book {
     }
 
     void menu() {
-        System.out.println("1 nhap thong tin n cuon sach ");
-        System.out.println("2 hien thi thong tin vua nhap");
-        System.out.println("3 sap xep giam dan theo nam xuat ban");
-        System.out.println("4 tim kiem theo ten sach");
-        System.out.println("5 tim kiem theo ten tac gia ");
-        System.out.println("6 thoat");
+        System.out.println("1. nhap thong tin n cuon sach ");
+        System.out.println("2. hien thi thong tin vua nhap");
+        System.out.println("3. sap xep giam dan theo nam xuat ban");
+        System.out.println("4. tim kiem theo ten sach");
+        System.out.println("5. tim kiem theo ten tac gia ");
+        System.out.println("6. thoat");
     }
 
     public static void main(String[] args) {
@@ -159,11 +156,17 @@ public class UnetiBook extends Book {
                     break;
                 }
                 case 4: {
-                    ab.searchNameBook(ab1);
+                    if (ab1 == null) {
+                        System.out.println("ban chua nhap du lieu");
+                    } else{
+                    ab.searchNameBook(ab1);}
                     break;
                 }
                 case 5: {
-                    ab.searchNameBook(ab1);
+                    if (ab1 == null) {
+                        System.out.println("ban chua nhap du lieu");
+                    } else{
+                    ab.searchNameBook(ab1);}
                     break;
                 }
                 case 6:

@@ -9,7 +9,6 @@ import java.util.Scanner;
 
 /**
  *
- * @author TRINH QUANG TOAN
  */
 public class Product {
 
